@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sebastian Torres | Full Stack Developer",
-  description: "Portfolio of Sebastian Torres, a full stack developer.",
+  title: "Sebastian Torres | Full-Stack Developer & Data Scientist",
+  description:
+    "Portfolio of Sebastian Torres, a full-stack developer and data scientist.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

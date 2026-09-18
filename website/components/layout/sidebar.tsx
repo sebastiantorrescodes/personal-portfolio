@@ -79,7 +79,7 @@ export default function Sidebar() {
           Sebastian Torres
         </h1>
         <h2 className="mt-3 text-lg font-medium text-slate-light sm:text-xl">
-          Full Stack Developer
+          Full-Stack Developer &amp; Data Scientist
         </h2>
         <p className="mt-4 max-w-xs leading-relaxed text-slate">
           I build full-stack products and AI-driven tools — from pixel-perfect
