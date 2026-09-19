@@ -1,21 +1,23 @@
+import SectionHeading from "@/components/layout/section-heading";
+
 const EXPERIENCE = [
   {
     id: 1,
-    date: "MAY 2026 — PRESENT",
+    date: "AUG 2025 — SEP 2026",
+    title: "Research Assistant / Full-Stack Developer",
+    company: "Bukhari Lab · Medicaddie (NSF-funded)",
+    description:
+      "Built bi-directional EHR integrations (Athena, Epic) using SMART on FHIR and HL7, design API endpoints powering a pre-submission billing audit engine, and lead the platform's UI/UX redesign.",
+    tags: ["React", "Tailwind CSS", "Python", "SQL", "FHIR/HL7"],
+  },
+   {
+    id: 2,
+    date: "MAY 2026 — AUG 2026",
     title: "Freelance Software & Technology Consultant",
     company: "B2B Tek",
     description:
       "Software development and technology consulting for small business clients — full-stack web apps with third-party integrations (Toast POS, Google OAuth), plus hardware and infrastructure setup.",
-    tags: ["Next.js", "Tailwind CSS", "Supabase", "Google OAuth"],
-  },
-  {
-    id: 2,
-    date: "AUG 2025 — PRESENT",
-    title: "Research Assistant / Full-Stack Developer",
-    company: "Bukhari Lab · Medicaddie (NSF-funded)",
-    description:
-      "Build bi-directional EHR integrations (Athena, Epic) using SMART on FHIR and HL7, design API endpoints powering a pre-submission billing audit engine, and lead the platform's UI/UX redesign.",
-    tags: ["React", "Tailwind CSS", "Python", "SQL", "FHIR/HL7"],
+    tags: ["Next.js", "Tailwind CSS", "Supabase", "Google OAuth", "NAS/Cloud Storage", "Firewall/Router Configuration"],
   },
   {
     id: 3,
@@ -24,7 +26,7 @@ const EXPERIENCE = [
     company: "St. John's University",
     description:
       "Ran drop-in and group tutoring sessions covering programming fundamentals through advanced data structures and database systems, using a Socratic, whiteboard-based teaching method.",
-    tags: ["Java", "SQL"],
+    tags: ["Java", "SQL", "Data Structures", "Algorithms", "Database Systems"],
   },
   {
     id: 4,
@@ -50,15 +52,16 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="mt-24 max-w-xl scroll-mt-24 lg:mt-36 lg:max-w-2xl"
+      className="mx-auto mt-24 max-w-xl scroll-mt-24 lg:mt-36 lg:max-w-2xl"
     >
+      <SectionHeading>Experience</SectionHeading>
       <div className="space-y-12">
         {EXPERIENCE.map((job) => (
           <div
             key={job.id}
-            className="group grid gap-1 sm:grid-cols-[140px_1fr] sm:gap-8"
+            className="group grid gap-1 sm:grid-cols-[160px_1fr] sm:gap-8"
           >
-            <span className="font-mono text-xs tracking-wide text-slate uppercase">
+            <span className="font-mono text-xs tracking-wide text-slate uppercase whitespace-nowrap">
               {job.date}
             </span>
             <div>

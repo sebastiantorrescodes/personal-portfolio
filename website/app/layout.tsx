@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Spotlight from "@/components/layout/spotlight";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sebastian Torres | Full-Stack Developer & Data Scientist",
+  title: "Sebastian Torres | Full-Stack Developer",
   description:
     "Portfolio of Sebastian Torres, a full-stack developer and data scientist.",
 };
@@ -27,7 +28,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Spotlight />
+        {children}
+      </body>
     </html>
   );
 }

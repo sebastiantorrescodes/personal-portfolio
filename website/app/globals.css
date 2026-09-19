@@ -70,13 +70,13 @@
   --card-foreground: var(--slate-lightest);
   --popover: var(--navy-light);
   --popover-foreground: var(--slate-lightest);
-  --primary: #d9b872;
+  --primary: #e0526b;
   --primary-foreground: var(--navy);
   --secondary: var(--navy-lightest);
   --secondary-foreground: var(--slate-lightest);
   --muted: var(--navy-light);
   --muted-foreground: var(--slate);
-  --accent: #d9b872;
+  --accent: #e0526b;
   --accent-foreground: var(--navy);
   --destructive: oklch(0.704 0.191 22.216);
   --border: var(--navy-lightest);
@@ -105,6 +105,16 @@
   body {
     @apply bg-background text-foreground;
   }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    pointer-events: none;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
   html {
     @apply font-sans;
     scroll-behavior: smooth;
@@ -112,5 +122,17 @@
   ::selection {
     background-color: var(--accent);
     color: var(--navy);
+  }
+}
+
+@keyframes spotlight-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    scale: 1;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.08;
   }
 }
