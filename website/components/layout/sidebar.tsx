@@ -15,8 +15,7 @@ const NAV_LINKS = [
   // { id: "contact", label: "Contact" },
 ];
 
-// TODO: add your resume file at website/public/resume.pdf
-const RESUME_HREF = "/resume.pdf";
+const RESUME_HREF = "/sebastian-torres-resume.pdf";
 
 // TODO: swap in your real GitHub handle
 const SOCIALS = [

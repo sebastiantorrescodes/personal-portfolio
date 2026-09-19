@@ -57,6 +57,32 @@ export default function Education() {
           </div>
         ))}
       </div>
+
+      <div className="mt-10 grid gap-8 sm:grid-cols-2">
+        <div>
+          <h3 className="font-mono text-xs tracking-widest text-accent uppercase">
+            Honors
+          </h3>
+          <ul className="mt-3 space-y-1.5 leading-relaxed text-slate">
+            <li>Summa Cum Laude</li>
+            <li>University Honors Program</li>
+            <li>Dean&apos;s List, all semesters</li>
+            <li>Collins College of Professional Studies (CCPS) Honors Society</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-mono text-xs tracking-widest text-accent uppercase">
+            Extracurriculars
+          </h3>
+          <ul className="mt-3 space-y-1.5 leading-relaxed text-slate">
+            <li>St. John&apos;s Hacks Organizer (Active)</li>
+            <li>
+              St. John&apos;s CyberStorm Member,{" "}
+              <span className="whitespace-nowrap">2025 - 2026</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }

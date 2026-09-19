@@ -33,7 +33,7 @@ const ALL_PROJECTS: {
   },
   {
     year: "2026",
-    title: "Slider — AI-Powered PowerPoint Add-in",
+    title: "Slider · AI-Powered PowerPoint Add-in",
     description:
       "Conversational AI PowerPoint add-in that generates slides, charts, and images from prompts.",
     tags: ["React", "TypeScript", "Office.js", "OpenAI"],
@@ -53,6 +53,22 @@ const ALL_PROJECTS: {
     description:
       "Cross-platform desktop app for extracting audio and video from YouTube links.",
     tags: ["Electron", "React", "TypeScript"],
+    categories: ["Full-Stack"],
+  },
+  {
+    year: "2026",
+    title: "NOVI Restaurant Website",
+    description:
+      "Freelance-built website and online ordering site for an Italian restaurant, pulling its live menu via the Toast API and matching the restaurant's in-store branding.",
+    tags: ["Next.js", "Tailwind CSS", "Toast API"],
+    categories: ["Full-Stack"],
+  },
+  {
+    year: "2026",
+    title: "Ledger · Wealth Management Platform",
+    description:
+      "Internal wealth-management tool for investment advisors to track a book of clients and their positions across private deals, with Postgres row-level security enforcing role-based access to each advisor's book.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Google OAuth", "PostgreSQL RLS", "Tailwind CSS"],
     categories: ["Full-Stack"],
   },
   {
@@ -77,6 +93,14 @@ const ALL_PROJECTS: {
     description:
       "Live storytelling platform for user-submitted stories, filterable by category and NYC borough.",
     tags: ["Next.js", "TypeScript", "React", "Express"],
+    categories: ["Full-Stack"],
+  },
+  {
+    year: "2025",
+    title: "YouTube Clone",
+    description:
+      "Microservices video-sharing platform (upload → transcode → stream) built from a NeetCode tutorial to learn GCP: Cloud Storage, Pub/Sub, and Firestore.",
+    tags: ["Next.js", "TypeScript", "Google Cloud Storage", "Pub/Sub", "Firestore", "Cloud Run"],
     categories: ["Full-Stack"],
   },
   {
