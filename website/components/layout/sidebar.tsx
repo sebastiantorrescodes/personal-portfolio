@@ -103,7 +103,8 @@ export default function Sidebar() {
 
         <a
           href={RESUME_HREF}
-          download
+          target="_blank"
+          rel="noreferrer"
           className="mt-6 inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 font-mono text-xs tracking-widest text-accent uppercase shadow-lg shadow-black/10 backdrop-blur-md transition-colors hover:bg-accent/20"
         >
           Resume
